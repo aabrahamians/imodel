@@ -10,8 +10,14 @@ has_attached_file :picture,
       :small    => ['100x100#',   :jpg, :convert_options => "-auto-orient"],
       :medium   => ['250x250',    :jpg, :convert_options => "-auto-orient"],
       :large    => ['600x600>',   :jpg, :convert_options => "-auto-orient"]
-    }
+    },
+    :storage => :dropbox,
+    :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
+    :dropbox_options => {:path => proc { |style| "#{style}/#{id}_#{picture.original_filename}"},       :unique_filename => true   
+  }
 
 
 
 end
+
+
