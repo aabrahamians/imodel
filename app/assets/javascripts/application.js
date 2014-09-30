@@ -12,12 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require 'gamma/gamma'
-//= require 'gamma/jquery.history'
-//= require 'gamma/jquery.masonry.min'
-//= require 'gamma/jquerypp.custom'
-//= require 'gamma/js-url.min'
 //= require 'gamma/modernizr.custom.70736'
+//= require 'gamma/gamma'
+//= require 'gamma/jquery.masonry.min'
+//= require 'gamma/jquery.history'
+//= require 'gamma/js-url.min'
+//= require 'gamma/jquerypp.custom'
 //= require foundation
 //= require turbolinks
 //= require_tree .
