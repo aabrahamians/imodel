@@ -50,50 +50,6 @@
 	display: block;
 }
 
-.gamma-description {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	bottom: 20px;
-	right: 20px;
-	text-align: center;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-	-webkit-transition: opacity 0.4s ease-in-out;
-	-moz-transition: opacity 0.4s ease-in-out;
-	-ms-transition: opacity 0.4s ease-in-out;
-	-o-transition: opacity 0.4s ease-in-out;
-	transition: opacity 0.4s ease-in-out;
-}
-
-.no-touch .gamma-gallery li:hover .gamma-description {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	filter: alpha(opacity=80);
-	opacity: 1;
-}
- 
-.gamma-description:before {
-	content: '';
-	height: 100%;
-}
-
-.gamma-description:before,
-.gamma-description h3 {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.gamma-description h3 {
-	width: 100%;
-	padding: 0 20px;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 2px;
-}
 
 .gamma-buttons {
 	position: absolute;

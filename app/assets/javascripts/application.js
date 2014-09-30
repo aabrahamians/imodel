@@ -19,7 +19,6 @@
 //= require 'gamma/js-url.min'
 //= require 'gamma/jquerypp.custom'
 //= require foundation
-//= require turbolinks
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
