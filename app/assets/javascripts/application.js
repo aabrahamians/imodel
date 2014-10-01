@@ -12,41 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require 'gamma/modernizr.custom.70736'
-//= require 'gamma/gamma'
-//= require 'gamma/jquery.masonry.min'
-//= require 'gamma/jquery.history'
-//= require 'gamma/js-url.min'
-//= require 'gamma/jquerypp.custom'
+//= require jquery-fileupload
+//= require dropzone.min
 //= require foundation
 //= require_tree .
-
 $(function(){ $(document).foundation(); });
-
-	
-			$(function() {
-
-				var GammaSettings = {
-						// order is important!
-						viewport : [ {
-							width : 1200,
-							columns : 5
-						}, {
-							width : 900,
-							columns : 4
-						}, {
-							width : 500,
-							columns : 3
-						}, { 
-							width : 320,
-							columns : 1
-						}, { 
-							width : 0,
-							columns : 2
-						} ]
-				};
-
-				Gamma.init( GammaSettings);
-
-
-			});
