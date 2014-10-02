@@ -1210,6 +1210,7 @@ $sub-nav-active-cursor: default;
 
 // Background color for the top bar
 // $topbar-bg-color: #333;
+$topbar-bg-color: rgba(103, 63, 95, 1); 
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1221,9 +1222,9 @@ $sub-nav-active-cursor: default;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: rgba(103, 63, 95, 1);
 // $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+$topbar-dropdown-link-bg: rgba(103, 63, 95, 1);
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;

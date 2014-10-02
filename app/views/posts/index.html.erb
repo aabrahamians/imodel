@@ -1,26 +1,24 @@
-<div class="container">
+<div class="container gallery">
   <div id="posts" class="row">
 <!-- loop through posts -->
-    <% @posts.each do |post| %>        
+    <% @allpost.each do |post| %>        
       
-        <div class="item medium-4 columns" style="padding:0;">
-          <div class="th ">
-            <%= image_tag post.picture.url %>
-
-            <div class="hover-description">
-                <a href="#" data-reveal-id="myModal">More</a>
-                
-            </div>
+        <div class="item medium-4 columns" >
+          <div>
+            <a href="#" data-reveal-id="<%= "myModal" + post.id.to_s %>"><%= image_tag post.picture.url %></a> 
+            
+    
+                <!-- reveal modal -->
+                <div id="<%= "myModal" + post.id.to_s %>" class="reveal-modal small small six centered text-center" data-reveal>
+                        <h2><%= post.title%></h2>
+                        <%= image_tag post.picture.url(:large) %>
+                        <p><%= button_to "Edit", edit_post_path(post), method: :get, class: "button expand"%></p>
+                        <a class="close-reveal-modal">&#215;</a>                </div>
+                <!-- end reveal -->
+            
           </div>
         </div>
-<!-- reveal modal -->
-        <div id="myModal" class="reveal-modal" data-reveal>
-                <h2><%= post.title%></h2>
-                <%= image_tag post.picture.url %>
-                <p><%= link_to "Show", post_path(post)%></p>
-                <p><%= link_to 'Destroy', post_path(post), confirm: 'Are you sure?', method: :delete %></p> 
-                <a class="close-reveal-modal">&#215;</a>
-        </div>
+
     <% end %>
       
   </div>
@@ -33,4 +31,4 @@
 
 
     
-    <%= link_to "new post", new_post_path %>
+    
