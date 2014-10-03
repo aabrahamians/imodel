@@ -1,6 +1,11 @@
+
+    <% if @allpost.count == 0  %>
+    <h1>Come back soon to see some posts!</h1>
+    <% end %>
 <div class="container gallery">
   <div id="posts" class="row">
 <!-- loop through posts -->
+
     <% @allpost.each do |post| %>        
       
         <div class="item medium-4 columns" >
@@ -9,10 +14,12 @@
             
     
                 <!-- reveal modal -->
-                <div id="<%= "myModal" + post.id.to_s %>" class="reveal-modal small small six centered text-center" data-reveal>
+                <div id="<%= "myModal" + post.id.to_s %>" style= "background-color: black;" class="reveal-modal  medium  centered text-center" data-reveal >
                         <h2><%= post.title%></h2>
                         <%= image_tag post.picture.url(:large) %>
+                        <% if admin_signed_in? %>
                         <p><%= button_to "Edit", edit_post_path(post), method: :get, class: "button expand"%></p>
+                        <% end %>
                         <a class="close-reveal-modal">&#215;</a>                </div>
                 <!-- end reveal -->
             
