@@ -19,6 +19,7 @@ gem 'paperclip'
 # authentication devise
 gem 'devise'
 # Zurb Foundation
+gem 'sprockets'
 gem 'foundation-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

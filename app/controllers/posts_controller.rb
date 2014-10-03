@@ -9,6 +9,11 @@ class PostsController < ApplicationController
     @background = Post.all.where(feature: true)
     @allpost = Post.all
   end
+  def welcome
+    @gallery = Post.all.where(feature: false)
+    @background = Post.all.where(feature: true)
+    @allpost = Post.all
+  end
 
   # GET /posts/1
   # GET /posts/1.json

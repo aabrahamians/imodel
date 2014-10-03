@@ -17,3 +17,21 @@
 //= require foundation
 //= require_tree .
 $(function(){ $(document).foundation(); });
+
+
+$(document).ready(function() {
+   
+    $('.one-time').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        autoplay: true,
+  			autoplaySpeed: 2000,
+        adaptiveHeight: true,
+        cssEase: true,
+        arrows: false
+
+    });
+
+});
