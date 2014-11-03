@@ -22,15 +22,18 @@ $(function(){ $(document).foundation(); });
 $(document).ready(function() {
    
     $('.one-time').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 3,
         autoplay: true,
   			autoplaySpeed: 2000,
         adaptiveHeight: true,
         cssEase: true,
-        arrows: false
+        arrows: false,
+        variableWdith: false,
+
+        
 
     });
 

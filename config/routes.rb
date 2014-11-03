@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :admins
   resources :posts
-  root 'posts#welcome'
+  root 'welcome_page#index'
   get '/welcome' => "posts#index"
 
   get "/admin" => redirect("/admins/sign_in")

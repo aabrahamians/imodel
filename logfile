@@ -1,0 +1,9 @@
+LOG:  database system was shut down at 2014-11-01 12:46:14 PDT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "iModel_development" does not exist
+FATAL:  database "iModel_development" does not exist
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

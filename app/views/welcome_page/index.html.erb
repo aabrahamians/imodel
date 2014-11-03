@@ -1,0 +1,19 @@
+  
+<style>html{height: 100%;width:100%;}, .picture{width:100%; min-height:100%; top:0; left:0;position:fixed;}</style>
+				
+<div class="one-time" >
+				<% @background.each do |p| %>
+				
+					
+					
+
+					<div class="picture"><img src=<%= p.picture.url(:large) %>></div>
+					
+					
+				<%end%>
+
+				</div>
+</div>
+			<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+			
